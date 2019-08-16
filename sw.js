@@ -12,6 +12,10 @@ workbox.precaching.precacheAndRoute([
     "revision": "fdf645cc739b9117ab562ea85c3a113b"
   },
   {
+    "url": "css/lora.css",
+    "revision": "165f492b6a910e09c1fef04e175601a7"
+  },
+  {
     "url": "css/simplelightbox.min.css",
     "revision": "3da4245a4496d75703313e6b3e2f1759"
   },
@@ -149,7 +153,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "index.html",
-    "revision": "0822af19e93c323db1161fc34ed02dae"
+    "revision": "8061f1e0a4c671c6823c924d36ac1e2f"
   },
   {
     "url": "manifest.json",
@@ -159,7 +163,7 @@ workbox.precaching.precacheAndRoute([
 
 // Cache the underlying font files with a cache-first strategy for 1 year.
 workbox.routing.registerRoute(
-  /^https:\/\/fonts\.(?:gstatic|googleapis)\.com/,
+  /^https:\/\/fonts\.gstatic\.com/,
   new workbox.strategies.CacheFirst({
     cacheName: 'google-fonts-webfonts',
     plugins: [
