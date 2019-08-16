@@ -348,7 +348,8 @@ img {
         text-align           : center;
     }
 
-    .section-footer .container div:nth-child(2), .section-footer .container div:nth-child(3) {
+    .section-footer .container div:nth-child(2),
+    .section-footer .container div:nth-child(3) {
         display: none;
     }
 
@@ -359,7 +360,7 @@ img {
 
     /* Email Form */
     form {
-        margin-top   : 1rem;
+        margin-top: 1rem;
     }
 
     /* Utilities */
