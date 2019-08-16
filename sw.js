@@ -5,11 +5,11 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox
 workbox.precaching.precacheAndRoute([
   {
     "url": "css/brands.min.css",
-    "revision": "9e1cb1c44e47320098c698a5eab7de96"
+    "revision": "3e034df4a1a407f99589ea84f68235a8"
   },
   {
     "url": "css/fontawesome.min.css",
-    "revision": "22d47066db80e10a0207f5104bdae51d"
+    "revision": "fdf645cc739b9117ab562ea85c3a113b"
   },
   {
     "url": "css/simplelightbox.min.css",
@@ -17,35 +17,35 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "css/solid.min.css",
-    "revision": "18918ee42733f1e4e3146a420688f58e"
+    "revision": "cf8693f4c7de72c2c1e658fe613ede77"
   },
   {
     "url": "css/style.css",
-    "revision": "ed219a59c604f445f2a490de8986afbe"
+    "revision": "ba57050000c3cf3a339b5cb85d5ee6ff"
   },
   {
     "url": "js/brands.min.js",
-    "revision": "54f2ba42f3c98b34f7c4cccc3b46ef92"
+    "revision": "619a92531a6f7c74b975cc59222385bd"
   },
   {
     "url": "js/fontawesome.min.js",
-    "revision": "7a86583e987aa7c1688a2f9bbc846e12"
+    "revision": "06aab865e1bcf087f1d14e9dd873cfbd"
   },
   {
     "url": "js/fontAwesomeKit.min.js",
-    "revision": "a8e6a3dde655976cfaa1ae45d67d78de"
+    "revision": "b6c5c70f1cbf9fe8fa9d2766b4f1c9f5"
   },
   {
     "url": "js/jquery-2.2.4.min.js",
-    "revision": "2f6b11a7e914718e0290410e85366fe9"
+    "revision": "710458dd559c957714ac4a8e95357eb5"
   },
   {
     "url": "js/jquery-3.4.1.min.js",
-    "revision": "220afd743d9e9643852e31a135a9f3ae"
+    "revision": "a6b6350ee94a3ea74595c065cbf58af0"
   },
   {
     "url": "js/jquery-3.4.1.slim.min.js",
-    "revision": "d9b11ca4d877c327889805b73bb79edd"
+    "revision": "50dc009b65de5def1626271a5117f970"
   },
   {
     "url": "js/script.js",
@@ -53,7 +53,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "js/simple-lightbox-1.17.2.min.js",
-    "revision": "1a82ff15c27b4b794ce1bd171b453a6a"
+    "revision": "7846f84b724a76c5db06eef32458eb11"
   },
   {
     "url": "img/gal2323.webp",
@@ -88,12 +88,44 @@ workbox.precaching.precacheAndRoute([
     "revision": "b1d7005e9426933d81b0535ebc98f607"
   },
   {
+    "url": "img/icons/icon-128x128.png",
+    "revision": "0ea35391c4b78f5ad9702cf407bea63c"
+  },
+  {
+    "url": "img/icons/icon-144x144.png",
+    "revision": "41ba3cb88bf2d290b28576d00b4369e0"
+  },
+  {
+    "url": "img/icons/icon-152x152.png",
+    "revision": "1861c68d0f30774fff2a294a6f281367"
+  },
+  {
+    "url": "img/icons/icon-192x192.png",
+    "revision": "e827ef6022c22bcd67ff1308b0c2fe89"
+  },
+  {
+    "url": "img/icons/icon-384x384.png",
+    "revision": "85b0268742704c0697e68e220d11f51d"
+  },
+  {
+    "url": "img/icons/icon-512x512.png",
+    "revision": "44c09f60b410ecebedb07c1b91ed0e5c"
+  },
+  {
+    "url": "img/icons/icon-72x72.png",
+    "revision": "68694b40952fc5aae8300c464e3bc3bf"
+  },
+  {
+    "url": "img/icons/icon-96x96.png",
+    "revision": "c9e803e4c691a569603615725d368f4b"
+  },
+  {
     "url": "webfonts/fa-brands-400.eot",
     "revision": "3165b14bbf3b64fca65829ecde6b800d"
   },
   {
     "url": "webfonts/fa-brands-400.svg",
-    "revision": "f249e44df3044e7b0d665b550569ddf0"
+    "revision": "75af8363f4a38af4de07e056ffa068f9"
   },
   {
     "url": "webfonts/fa-brands-400.ttf",
@@ -113,7 +145,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "webfonts/fa-solid-900.svg",
-    "revision": "fdc155d57b7351ef85b3028ea3cfc048"
+    "revision": "f4e2aa6a10b878a8db2ca3c5c916f30a"
   },
   {
     "url": "webfonts/fa-solid-900.ttf",
@@ -129,11 +161,11 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "index.html",
-    "revision": "5f30e7dffa1bfc614645a5d7ee95d567"
+    "revision": "747f099d4cd6ef304030be985cd84243"
   },
   {
     "url": "manifest.json",
-    "revision": "6c128384965d58360f5ed90c721387e5"
+    "revision": "427bba52c7095de7bbdc3cf7f9d008a7"
   }
 ]);
 
