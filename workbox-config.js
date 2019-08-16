@@ -1,7 +1,13 @@
 module.exports = {
   "globDirectory": ".",
   "globPatterns": [
-    "**/*.{css,html,js,eot,svg,ttf,woff,woff2}"
+    "css/*.css",
+    "js/*.js",
+    "img/*.webp",
+    "webfonts/*.{eot,svg,ttf,woff,woff2}",
+    "index.html",
+    "manifest.json"
   ],
-  "swDest": "js/sw.js"
+  "swSrc": "custom-sw.js",
+  "swDest": "sw.js"
 };

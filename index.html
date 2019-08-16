@@ -6,10 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- <script src="js/fontAwesomeKit.min.js"></script> -->
+  <link rel="manifest" href="manifest.json">
   <link href="css/fontawesome.min.css" rel="stylesheet">
   <link href="css/brands.min.css" rel="stylesheet">
   <link href="css/solid.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+  <link crossorigin="anonymous" href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/simplelightbox.min.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Phone - Headphones</title>
@@ -36,7 +37,10 @@
           asperiores temporibus? Rerum sunt minima magni.</p>
         <a href="#" class="btn">Read More</a>
       </div>
-      <img crossorigin="anonymous" src="https://i.ibb.co/37Y74kv/showcase.jpg" alt="Head phone">
+      <picture>
+        <source srcset="/img/showcase.webp" type="image/webp">
+        <img crossorigin="anonymous" src="https://i.ibb.co/37Y74kv/showcase.jpg" alt="Head phone">
+      </picture>
     </div>
   </section>
   <!-- Overlay Text -->
@@ -53,18 +57,47 @@
   <!-- Gallery -->
   <section class="section-c">
     <div class="gallery">
-      <a href="https://i.ibb.co/CHLBZnp/gal2323.jpg" class="big"><img crossorigin="anonymous" src="https://i.ibb.co/CHLBZnp/gal2323.jpg"
-          alt=""></a>
-      <a href="https://i.ibb.co/4pBbhfY/gal39834.jpg" class="big"><img crossorigin="anonymous" src="https://i.ibb.co/4pBbhfY/gal39834.jpg"
-          alt=""></a>
-      <a href="https://i.ibb.co/xSnHP7g/gal43884.jpg" class="big"><img crossorigin="anonymous" src="https://i.ibb.co/xSnHP7g/gal43884.jpg"
-          alt=""></a>
-      <a href="https://i.ibb.co/QN6Bnrb/gal4958.jpg" class="big"><img crossorigin="anonymous" src="https://i.ibb.co/QN6Bnrb/gal4958.jpg"
-          alt=""></a>
-      <a href="https://i.ibb.co/dGZvj75/gal4545.jpg" class="big"><img crossorigin="anonymous" src="https://i.ibb.co/dGZvj75/gal4545.jpg"
-          alt=""></a>
-      <a href="https://i.ibb.co/S6FVFNt/gal74744.jpg" class="big"><img crossorigin="anonymous" src="https://i.ibb.co/S6FVFNt/gal74744.jpg"
-          alt=""></a>
+      <!-- <a href="https://i.ibb.co/CHLBZnp/gal2323.jpg" class="big"> -->
+      <a href="/img/gal2323.webp" class="big">
+        <picture>
+          <source srcset="/img/gal2323.webp" type="image/webp">
+          <img src="https://i.ibb.co/CHLBZnp/gal2323.jpg" alt="Site Logo">
+        </picture>
+      </a>
+      <!-- <a href="https://i.ibb.co/4pBbhfY/gal39834.jpg" class="big"> -->
+      <a href="/img/gal39834.webp" class="big">
+        <picture>
+          <source srcset="/img/gal39834.webp" type="image/webp">
+          <img crossorigin="anonymous" src="https://i.ibb.co/4pBbhfY/gal39834.jpg" alt="">
+        </picture>
+      </a>
+      <!-- <a href="https://i.ibb.co/xSnHP7g/gal43884.jpg" class="big"> -->
+      <a href="/img/gal43884.webp" class="big">
+        <picture>
+          <source srcset="/img/gal43884.webp" type="image/webp">
+          <img crossorigin="anonymous" src="https://i.ibb.co/xSnHP7g/gal43884.jpg" alt="">
+        </picture>
+      </a>
+      <!-- <a href="https://i.ibb.co/QN6Bnrb/gal4958.jpg" class="big"> -->
+      <a href="/img/gal4958.webp" class="big">
+        <picture>
+          <source srcset="/img/gal4958.webp" type="image/webp">
+          <img crossorigin="anonymous" src="https://i.ibb.co/QN6Bnrb/gal4958.jpg" alt="">
+        </picture>
+      </a>
+      <!-- <a href="https://i.ibb.co/dGZvj75/gal4545.jpg" class="big"> -->
+      <a href="/img/gal4545.webp" class="big">
+        <picture>
+          <source srcset="/img/gal4545.webp" type="image/webp">
+          <img crossorigin="anonymous" src="https://i.ibb.co/dGZvj75/gal4545.jpg" alt="">
+        </picture>
+      </a>
+      <a href="/img/gal74744.webp" class="big">
+        <picture>
+          <source srcset="/img/gal74744.webp" type="image/webp">
+          <img crossorigin="anonymous" src="https://i.ibb.co/S6FVFNt/gal74744.jpg" alt="">
+        </picture>
+      </a>
     </div>
   </section>
   <!-- Footer -->
@@ -108,8 +141,7 @@
       </div>
     </div>
   </footer>
-  <script src="js/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-    crossorigin="anonymous"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/simple-lightbox-1.17.2.min.js"></script>
   <script src="js/script.js"></script>
 </body>

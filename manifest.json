@@ -1,0 +1,10 @@
+{
+  "name": "Product Landing",
+  "short_name": "Product",
+  "start_url": "/",
+  "theme_color": "#333333",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/"
+}

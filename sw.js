@@ -1,100 +1,8 @@
-/**
- * Welcome to your Workbox-powered service worker!
- *
- * You'll need to register this file in your web app and you should
- * disable HTTP caching for this file too.
- * See https://goo.gl/nhQhGp
- *
- * The rest of the code is auto-generated. Please don't update this file
- * directly; instead, make changes to your Workbox build configuration
- * and re-run your build process.
- * See https://goo.gl/2aRDsh
- */
-
+// This is my costum Service Worker
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
-self.addEventListener('message', (event) => {
-  if (event.data && event.data.type === 'SKIP_WAITING') {
-    self.skipWaiting();
-  }
-});
-
-// Cache html
-// workbox.routing.registerRoute(
-//   /\.html$/,
-//   new workbox.strategies.CacheFirst({
-//     cacheName: 'html-cache',
-//     plugins: [
-//       new workbox.expiration.Plugin({
-//         maxEntries: 60,
-//         maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days
-//       }),
-//     ],
-//   })
-// );
-
-// Cache images
-// workbox.routing.registerRoute(
-//   /\.(?:png|gif|jpg|jpeg|webp|svg)$/,
-//   new workbox.strategies.CacheOnly({
-//     cacheName: 'images-cache',
-//     plugins: [
-//       new workbox.expiration.Plugin({
-//         maxEntries: 60,
-//         maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days
-//       }),
-//     ],
-//   })
-// );
-
-// Cache Style sheet files
-// workbox.routing.registerRoute(
-//   /\.css$/,
-//   new workbox.strategies.CacheFirst({
-//     cacheName: 'css-cache',
-//     plugins: [
-//       new workbox.expiration.Plugin({
-//         maxEntries: 60,
-//         maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days
-//       }),
-//     ],
-//   })
-// );
-
-// Cache JS files
-// workbox.routing.registerRoute(
-//   /\.js$/,
-//   new workbox.strategies.CacheFirst({
-//     cacheName: 'js-cache',
-//     plugins: [
-//       new workbox.expiration.Plugin({
-//         maxEntries: 60,
-//         maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days
-//       }),
-//     ],
-//   })
-// );
-
-// Cache fonts files
-// workbox.routing.registerRoute(
-//   /\.(?:eot|woff|woff2|ttf)$/,
-//   new workbox.strategies.CacheFirst({
-//     cacheName: 'fonts-cache',
-//     plugins: [
-//       new workbox.expiration.Plugin({
-//         maxEntries: 60,
-//         maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days
-//       }),
-//     ],
-//   })
-// );
-
-/**
- * The workboxSW.precacheAndRoute() method efficiently caches and responds to
- * requests for URLs in the manifest.
- * See https://goo.gl/S9QRab
- */
-self.__precacheManifest = [
+// Injected files target
+workbox.precaching.precacheAndRoute([
   {
     "url": "css/brands.min.css",
     "revision": "9e1cb1c44e47320098c698a5eab7de96"
@@ -113,11 +21,7 @@ self.__precacheManifest = [
   },
   {
     "url": "css/style.css",
-    "revision": "578255be41075bb5874e5867eb675a17"
-  },
-  {
-    "url": "index.html",
-    "revision": "cef135e24117a856bb43b63aa57a0c09"
+    "revision": "ed219a59c604f445f2a490de8986afbe"
   },
   {
     "url": "js/brands.min.js",
@@ -136,12 +40,52 @@ self.__precacheManifest = [
     "revision": "2f6b11a7e914718e0290410e85366fe9"
   },
   {
+    "url": "js/jquery-3.4.1.min.js",
+    "revision": "220afd743d9e9643852e31a135a9f3ae"
+  },
+  {
+    "url": "js/jquery-3.4.1.slim.min.js",
+    "revision": "d9b11ca4d877c327889805b73bb79edd"
+  },
+  {
     "url": "js/script.js",
-    "revision": "e2a7f99f7b847682be64adc86d9ca6c4"
+    "revision": "db1c80ea34e5a5d1fa282f5ee53ed53d"
   },
   {
     "url": "js/simple-lightbox-1.17.2.min.js",
     "revision": "1a82ff15c27b4b794ce1bd171b453a6a"
+  },
+  {
+    "url": "img/gal2323.webp",
+    "revision": "00362a7ac9b21d3de8107be4868252b1"
+  },
+  {
+    "url": "img/gal39834.webp",
+    "revision": "0250bec4aef06890c52580b5d896fd0e"
+  },
+  {
+    "url": "img/gal43884.webp",
+    "revision": "2ccd953962c374b80eba3b08ffebd37d"
+  },
+  {
+    "url": "img/gal4545.webp",
+    "revision": "9aedfbad14f1dfd050944c4d732e99c1"
+  },
+  {
+    "url": "img/gal4958.webp",
+    "revision": "936fbf6e86e43f00263550ebb3a3727f"
+  },
+  {
+    "url": "img/gal74744.webp",
+    "revision": "a1938f6cab25671b330f32d7f62963e4"
+  },
+  {
+    "url": "img/section-b.webp",
+    "revision": "949167572d43269d3b64c188f1fe2272"
+  },
+  {
+    "url": "img/showcase.webp",
+    "revision": "b1d7005e9426933d81b0535ebc98f607"
   },
   {
     "url": "webfonts/fa-brands-400.eot",
@@ -182,13 +126,20 @@ self.__precacheManifest = [
   {
     "url": "webfonts/fa-solid-900.woff2",
     "revision": "2cd2be177470d5096992572176bbe76e"
+  },
+  {
+    "url": "index.html",
+    "revision": "5f30e7dffa1bfc614645a5d7ee95d567"
+  },
+  {
+    "url": "manifest.json",
+    "revision": "6c128384965d58360f5ed90c721387e5"
   }
-].concat(self.__precacheManifest || []);
-workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
+]);
 
 // Cache the underlying font files with a cache-first strategy for 1 year.
 workbox.routing.registerRoute(
-  /^https:\/\/fonts\.gstatic\.com/,
+  /^https:\/\/fonts\.(?:gstatic|googleapis)\.com/,
   new workbox.strategies.CacheFirst({
     cacheName: 'google-fonts-webfonts',
     plugins: [
@@ -203,9 +154,26 @@ workbox.routing.registerRoute(
   })
 );
 
-// Cache images
+// Cache external images
 workbox.routing.registerRoute(
   /^https:\/\/i\.ibb\.co/,
+  new workbox.strategies.CacheFirst({
+    cacheName: 'ibb.images-cache',
+    plugins: [
+      new workbox.expiration.Plugin({
+        maxEntries: 20,
+        maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days
+
+        // Automatically cleanup if quota is exceeded.
+        purgeOnQuotaError: true,
+      })
+    ]
+  })
+);
+
+// Cache local jpg images
+workbox.routing.registerRoute(
+  /\.jpg$/,
   new workbox.strategies.CacheFirst({
     cacheName: 'ibb.images-cache',
     plugins: [

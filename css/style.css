@@ -111,6 +111,7 @@ img {
     height    : 600px;
     padding   : 5rem 0;
     background: url("https://i.ibb.co/1RS1dqC/section-b.jpg") no-repeat bottom center/cover;
+    background: url("../img/section-b.webp") no-repeat bottom center/cover;
 }
 
 .section-b-inner {
