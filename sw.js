@@ -163,7 +163,7 @@ workbox.precaching.precacheAndRoute([
 
 // Cache the underlying font files with a cache-first strategy for 1 year.
 workbox.routing.registerRoute(
-  /^https:\/\/fonts\.gstatic\.com/,
+  /^https:\/\/fonts\.(?:gstatic|googleapis)\.com/,
   new workbox.strategies.CacheFirst({
     cacheName: 'google-fonts-webfonts',
     plugins: [
