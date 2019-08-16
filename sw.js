@@ -32,20 +32,8 @@ workbox.precaching.precacheAndRoute([
     "revision": "06aab865e1bcf087f1d14e9dd873cfbd"
   },
   {
-    "url": "js/fontAwesomeKit.min.js",
-    "revision": "b6c5c70f1cbf9fe8fa9d2766b4f1c9f5"
-  },
-  {
-    "url": "js/jquery-2.2.4.min.js",
-    "revision": "710458dd559c957714ac4a8e95357eb5"
-  },
-  {
     "url": "js/jquery-3.4.1.min.js",
     "revision": "a6b6350ee94a3ea74595c065cbf58af0"
-  },
-  {
-    "url": "js/jquery-3.4.1.slim.min.js",
-    "revision": "50dc009b65de5def1626271a5117f970"
   },
   {
     "url": "js/script.js",
